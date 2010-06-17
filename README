@@ -1,0 +1,10 @@
+This project allows you to create objects that mimic physical variables. 
+
+For example
+
+length = BaseUnit.new({:meter => 1, :quantity => 2.0})
+width = BaseUnit.new({:meter => 1, :quantity => 11.0})
+
+area = length * width
+area.to_s
+=> "22.0 meter**2"
